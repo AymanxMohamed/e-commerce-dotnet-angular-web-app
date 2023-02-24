@@ -67,3 +67,7 @@ C:\Users\ayman\Desktop\Projects\e-commerce\dotnet-with-angular\udemy\neil-cummin
 C:\Users\ayman\Desktop\Projects\e-commerce\dotnet-with-angular\udemy\neil-cummings\skinet\skinet.mywork\API\bin\Debug\net7.0\Infrastrucutre.dll
 C:\Users\ayman\Desktop\Projects\e-commerce\dotnet-with-angular\udemy\neil-cummings\skinet\skinet.mywork\API\bin\Debug\net7.0\Infrastrucutre.pdb
 C:\Users\ayman\Desktop\Projects\e-commerce\dotnet-with-angular\udemy\neil-cummings\skinet\skinet.mywork\API\bin\Debug\net7.0\Core.pdb
+C:\Users\ayman\Desktop\Projects\e-commerce\dotnet-with-angular\udemy\neil-cummings\skinet\skinet.mywork\API\bin\Debug\net7.0\Humanizer.dll
+C:\Users\ayman\Desktop\Projects\e-commerce\dotnet-with-angular\udemy\neil-cummings\skinet\skinet.mywork\API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ayman\Desktop\Projects\e-commerce\dotnet-with-angular\udemy\neil-cummings\skinet\skinet.mywork\API\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\ayman\Desktop\Projects\e-commerce\dotnet-with-angular\udemy\neil-cummings\skinet\skinet.mywork\API\bin\Debug\net7.0\System.CodeDom.dll
