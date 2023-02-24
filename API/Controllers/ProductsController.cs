@@ -20,8 +20,19 @@ public class ProductsController : ControllerBase
 
     // Her API controller makes sure that this id is  
     // integer and if not it will return 400 Bad Request
+    // if we removed the [ApiController] notaion we will get 204 no content
     [HttpGet("{id}", Name = "GetProduct")]
     [ProducesResponseType(typeof(Product), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<Product>> GetProduct(int id) =>
         Ok(await _repository.GetProductByIdAsync(id));
+
+    [HttpGet("brands", Name = "GetProductBrands")]
+    [ProducesResponseType(typeof(IReadOnlyList<ProductBrand>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands() =>
+        Ok(await _repository.GetPruductBrandsAsync());
+
+    [HttpGet("types", Name = "GetProductTypes")]
+    [ProducesResponseType(typeof(IReadOnlyList<ProductType>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IReadOnlyList<ProductType>>> GetProductTypes() =>
+        Ok(await _repository.GetProductTypesAsync());
 }
