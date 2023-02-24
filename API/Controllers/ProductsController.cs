@@ -36,7 +36,8 @@ public class ProductsController : ControllerBase
     {
         var specification = new ProductsWithTypesAndBrandsSpecification();
         var products = await _productRepo.ListAsync(specification);
-        return Ok(_mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products));
+        return Ok(_mapper
+            .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products));
     }
 
     // Her API controller makes sure that this id is  
