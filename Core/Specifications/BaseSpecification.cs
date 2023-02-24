@@ -2,9 +2,12 @@ using System.Linq.Expressions;
 
 namespace Core.Specifications;
 
-public class Specification<TEntity> : ISpecification<TEntity>
+public abstract class BaseSpecification<TEntity> : ISpecification<TEntity>
 {
-    public Specification(Expression<Func<TEntity, bool>> criteria)
+    protected BaseSpecification()
+    {
+    }
+    public BaseSpecification(Expression<Func<TEntity, bool>> criteria)
     {
         Criteria = criteria;
     }

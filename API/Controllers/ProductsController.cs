@@ -2,6 +2,9 @@ using System.Net;
 using Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Core.Interfaces;
+using Core.Specifications;
+using API.Dtos;
+using AutoMapper;
 
 namespace API.Controllers;
 
@@ -12,33 +15,40 @@ public class ProductsController : ControllerBase
     private readonly IGenericRepository<Product> _productRepo;
     private readonly IGenericRepository<ProductBrand> _productBrandRepo;
     private readonly IGenericRepository<ProductType> _productTypeRepo;
+    private readonly IMapper _mapper;
 
     public ProductsController(
         IGenericRepository<Product> productRepo,
         IGenericRepository<ProductBrand> productBrandRepo,
-        IGenericRepository<ProductType> productTypeRepo
+        IGenericRepository<ProductType> productTypeRepo,
+        IMapper mapper
     )
     {
         _productRepo = productRepo;
         _productBrandRepo = productBrandRepo;
         _productTypeRepo = productTypeRepo;
+        _mapper = mapper;
     }
 
     [HttpGet(Name = "GetProducts")]
-    [ProducesResponseType(typeof(IEnumerable<Product>), (int)HttpStatusCode.OK)]
-    public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+    [ProducesResponseType(typeof(IEnumerable<ProductToReturnDto>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<IEnumerable<ProductToReturnDto>>> GetProducts()
     {
-        return Ok(await _productRepo.ListAllAsync());
+        var specification = new ProductsWithTypesAndBrandsSpecification();
+        var products = await _productRepo.ListAsync(specification);
+        return Ok(_mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products));
     }
 
     // Her API controller makes sure that this id is  
     // integer and if not it will return 400 Bad Request
     // if we removed the [ApiController] notaion we will get 204 no content
     [HttpGet("{id}", Name = "GetProduct")]
-    [ProducesResponseType(typeof(Product), (int)HttpStatusCode.OK)]
-    public async Task<ActionResult<Product>> GetProduct(int id)
+    [ProducesResponseType(typeof(ProductToReturnDto), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
     {
-        return Ok(await _productRepo.GetByIdAsync(id));
+        var specification = new ProductsWithTypesAndBrandsSpecification(id);
+        var product = await _productRepo.GetEntityWithSpecification(specification);
+        return Ok(_mapper.Map<Product, ProductToReturnDto>(product));
     }
 
 

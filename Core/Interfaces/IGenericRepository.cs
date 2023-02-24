@@ -1,4 +1,5 @@
 using Core.Entities;
+using Core.Specifications;
 
 namespace Core.Interfaces;
 public interface IGenericRepository<TEntity>
@@ -6,4 +7,6 @@ public interface IGenericRepository<TEntity>
 {
     Task<TEntity> GetByIdAsync(int id);
     Task<IReadOnlyList<TEntity>> ListAllAsync();
+    Task<TEntity> GetEntityWithSpecification(ISpecification<TEntity> specification);
+    Task<IReadOnlyList<TEntity>> ListAsync(ISpecification<TEntity> specification);
 }
