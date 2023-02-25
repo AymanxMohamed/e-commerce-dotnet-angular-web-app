@@ -6,6 +6,7 @@ using Core.Specifications;
 using API.Dtos;
 using AutoMapper;
 using API.Errors;
+using API.Helpers;
 
 namespace API.Controllers;
 
@@ -30,13 +31,26 @@ public class ProductsController : BaseApiController
     }
 
     [HttpGet(Name = "GetProducts")]
-    [ProducesResponseType(typeof(IEnumerable<ProductToReturnDto>), (int)HttpStatusCode.OK)]
-    public async Task<ActionResult<IEnumerable<ProductToReturnDto>>> GetProducts()
+    [ProducesResponseType(typeof(Pagination<ProductToReturnDto>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts(
+        [FromQuery] ProductSpecificationsParams productParams)
     {
-        var specification = new ProductsWithTypesAndBrandsSpecification();
+        var specification = new ProductsWithTypesAndBrandsSpecification(productParams);
+
+        var countSpecification = new ProductWithFiltersForCountSpecification(productParams);
+
+        var totalItems = await _productRepo.CountAsync(countSpecification);
+
         var products = await _productRepo.ListAsync(specification);
-        return Ok(_mapper
-            .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products));
+
+        var data = _mapper
+            .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
+
+        return Ok(new Pagination<ProductToReturnDto>(
+            productParams.PageIndex,
+        productParams.PageSize,
+        totalItems,
+        data));
     }
 
     // Her API controller makes sure that this id is  

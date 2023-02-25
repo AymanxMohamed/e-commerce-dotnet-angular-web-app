@@ -39,5 +39,9 @@ namespace Infrastrucutre.Data
             return await _context.Set<TEntity>().ToListAsync();
         }
 
+        public async Task<int> CountAsync(ISpecification<TEntity> specification)
+        {
+            return await ApplySpecification(specification).CountAsync();
+        }
     }
 }
