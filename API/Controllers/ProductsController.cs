@@ -5,12 +5,11 @@ using Core.Interfaces;
 using Core.Specifications;
 using API.Dtos;
 using AutoMapper;
+using API.Errors;
 
 namespace API.Controllers;
 
-[ApiController]
-[Route("api/[controller]")]
-public class ProductsController : ControllerBase
+public class ProductsController : BaseApiController
 {
     private readonly IGenericRepository<Product> _productRepo;
     private readonly IGenericRepository<ProductBrand> _productBrandRepo;
@@ -44,11 +43,15 @@ public class ProductsController : ControllerBase
     // integer and if not it will return 400 Bad Request
     // if we removed the [ApiController] notaion we will get 204 no content
     [HttpGet("{id}", Name = "GetProduct")]
-    [ProducesResponseType(typeof(ProductToReturnDto), (int)HttpStatusCode.OK)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
     public async Task<ActionResult<ProductToReturnDto>> GetProduct(int id)
     {
         var specification = new ProductsWithTypesAndBrandsSpecification(id);
         var product = await _productRepo.GetEntityWithSpecification(specification);
+
+        if (product == null) return NotFound(new ApiResponse(404));
+
         return Ok(_mapper.Map<Product, ProductToReturnDto>(product));
     }
 
