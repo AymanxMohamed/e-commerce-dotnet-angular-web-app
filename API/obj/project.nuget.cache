@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XqMMfWEnVK7ZeR5nGQMCeI9vVVrFsl97yXaS4R79DTuWi7rekRNSeNWEBppgTfhSYBiAOZJajGbkE7nhUWAe0A==",
+  "dgSpecHash": "XOhbdeN7txc4iPT6JJpAaHBP2fpg5MdP6SeDe4EuLROZNlIUOn14KNi4GFGINyw/CJVmu3wQoD7mGgRrnmAUhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj",
+  "projectFilePath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ayman\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

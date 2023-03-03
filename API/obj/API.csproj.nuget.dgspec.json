@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj": {}
+    "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj": {
+    "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj",
+        "projectUniqueName": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj",
+        "projectPath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\API.csproj",
         "packagesPath": "C:\\Users\\ayman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\obj\\",
+        "outputPath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj": {
-                "projectPath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj"
+              "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj": {
+                "projectPath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj": {
+    "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj",
+        "projectPath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\ayman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\obj\\",
+        "outputPath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj": {
+    "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj",
+        "projectUniqueName": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj",
         "projectName": "Infrastrucutre",
-        "projectPath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj",
+        "projectPath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\Infrastrucutre.csproj",
         "packagesPath": "C:\\Users\\ayman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\obj\\",
+        "outputPath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Infrastrucutre\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -180,8 +180,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\ayman\\Desktop\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj"
+              "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj": {
+                "projectPath": "D:\\Projects\\e-commerce\\dotnet-with-angular\\udemy\\neil-cummings\\skinet\\skinet.mywork\\Core\\Core.csproj"
               }
             }
           }
